@@ -20,6 +20,7 @@ class CashRegister
   
   def apply_discount
     # binding.pry
+<<<<<<< HEAD
     if discount != 0
       self.total = total - (total * discount / 100)
       "After the discount, the total comes to $#{total}."
@@ -30,5 +31,12 @@ class CashRegister
   
   def void_last_transaction
     self.total = total - last_transaction
+=======
+    if @discount != 0
+      @total = @total - (@total * @discount / 100)
+      "After the discount, the total comes to $#{@total}."
+    else
+    end
+>>>>>>> 6eba966db982c971ab1928b65d2adc51abce0c71
   end
 end
